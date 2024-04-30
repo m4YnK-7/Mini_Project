@@ -70,8 +70,6 @@ section {
 }
 
 .wrapper1 {
-  margin-left: auto;
-  margin-right: auto;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -557,3 +555,17 @@ a.portfolio:hover{
   }
 } 
 
+.super{
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper2 {
+    top: 50%;
+  left: 0%;
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}

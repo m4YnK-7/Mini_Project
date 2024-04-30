@@ -51,16 +51,14 @@ window.onload=()=>{
         }
 
         totalElement.textContent = total;
-        random();
+    
     }
 
-    function random(){
-        document.querySelector('.containerPop>.total').innerHTML="Total amount: Rs "+ total
-    }
 
     function removeFromCart(itemId) {
         delete cart[itemId];
         updateCart();
+        total = 0;
     }
 
     const paymentForm = document.getElementById('paymentForm');
@@ -88,6 +86,6 @@ window.onload=()=>{
         popup.classList.add('unhide')
         popup.classList.remove('hide')
         popup.innerHTML=' <img src="./images/QR.jpeg" alt="QR" ><p  class="total ">Total Amount: Rs 0</p><button  onclick="hide()" class="remove">Pay</button>'
-        random();
+        
     }
     
